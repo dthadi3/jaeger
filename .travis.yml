@@ -45,6 +45,57 @@ matrix:
   - go: "1.15.x"
     env:
     - HOTROD=true
+#Added power jobs
+  - go: "1.15.x"
+    env:
+    - TESTS=true
+    - COVERAGE=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - PROTO_GEN_TEST=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - ALL_IN_ONE=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - CROSSDOCK=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - CROSSDOCK_OTEL=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - DOCKER=true
+    - DEPLOY=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - ES_INTEGRATION_TEST=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - ES_OTEL_INTEGRATION_TEST=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - KAFKA_INTEGRATION_TEST=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - CASSANDRA_INTEGRATION_TEST=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - MEM_AND_BADGER_INTEGRATION_TEST=true
+    arch: ppc64le
+  - go: "1.15.x"
+    env:
+    - HOTROD=true
+    arch: ppc64le
 
 services:
   - docker
